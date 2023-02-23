@@ -1,38 +1,69 @@
-.App {
-  text-align: center;
+*{
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+    height: 100%;
+    font-size: 14px;
+    color: #615b5b;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+}
+.container--img-gallery{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 100%;
+    flex-wrap: wrap;
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container--img{
+    position: relative;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    object-fit: contain;
+    width: 250px;
+    height: 250px;
+    filter: opacity(0.85);
+    border: 1px dotted #fff;
+
+    -webkit-box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.25);
+    box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.25);
+
+    transition: all 200ms;
+    cursor: pointer;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container--img img{
+    height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.container--img:nth-child(n):hover{
+    transform: scale(1.05);
 }
 
-.App-link {
-  color: #61dafb;
+.img--title{
+    position: absolute;
+    bottom: -20px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h2{
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 3rem;
+    margin: 0 0 1rem 0;
+    line-height: 2.75rem;
+}
+
+span{
+    margin-right: 1rem;
+    padding: 0.25rem;
+    background-color: #615b5b;
+    color: #ffffff;
+    border-radius: 5px;
 }

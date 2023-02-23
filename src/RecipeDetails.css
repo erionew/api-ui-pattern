@@ -1,0 +1,96 @@
+.container--background{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, .30);  
+    backdrop-filter: blur(10px);
+    z-index: 100;
+}
+.container--recipe-details{
+    position: absolute;
+    display: flex;
+    top: 10vh;
+    padding: 4rem;
+    border: 1px solid #fff;
+    width: 60%;
+    max-width: 1000px;
+    height: 500px;
+    background-color: #ffffff;
+    background-image: url("https://www.transparenttextures.com/patterns/bedge-grunge.png");
+
+    -webkit-box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.5);
+    -moz-box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.5);
+    box-shadow: 0px 10px 20px -10px rgba(0,0,0,0.5);
+    
+}
+
+.container--recipe-details > img{
+    align-self: center;
+    margin-right: 1rem;
+    height: 300px;
+    width: 225px;
+    border-color: #ffffff;
+    border-style: solid;
+    border-width: 15px 15px 80px 15px;
+    cursor: pointer;
+    transition: all 300ms;
+    transform: rotate(7deg);
+
+    -webkit-box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 10px 20px -5px rgba(0,0,0,0, 0.25);
+    box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.25);
+
+}
+
+.container--recipe-details::before{
+    position: absolute;
+    bottom: 100px;
+    content: " ";
+    height: 300px;
+    width: 225px;
+    background-color: #ffffff;
+    transform: rotate(-7deg);
+
+    -webkit-box-shadow: 0px 10px 20px -5px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 10px 20px -5px rgba(0,0,0,0, 0.25);
+    box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.25);
+}
+
+.container--recipe-content{
+    align-self: center;
+    padding: 1rem;
+    margin: 1rem;
+    line-height: 2rem;
+    height: 90%;
+    overflow: scroll;
+
+   
+}
+
+.btn--close-window{
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 1rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #615b5b;
+}
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, .5);
+    box-shadow: 0 0 1px rgba(255, 255, 255, .5);
+  }
+
+ 
