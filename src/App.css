@@ -11,11 +11,12 @@ body{
 }
 .container--img-gallery{
     display: flex;
+    margin: auto;
     flex-direction: row;
     justify-content: center;
     height: 100%;
     flex-wrap: wrap;
-    
+    width: 90%;
 }
 
 .container--img{
@@ -29,10 +30,6 @@ body{
     height: 250px;
     filter: opacity(0.85);
     border: 1px dotted #fff;
-
-    -webkit-box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.25);
-    -moz-box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.25);
-    box-shadow: 0px 10px 20px -5px rgba(0,0,0,0.25);
 
     transition: all 200ms;
     cursor: pointer;
@@ -60,10 +57,71 @@ h2{
     line-height: 2.75rem;
 }
 
-span{
+div > span{
     margin-right: 1rem;
     padding: 0.25rem;
     background-color: #615b5b;
     color: #ffffff;
     border-radius: 5px;
+}
+
+header{
+    height: 25vh;
+    position: relative;
+    margin-bottom: 2rem;
+
+}
+
+h1{
+    position: absolute;
+    font-family: 'Sacramento', cursive;
+    color: white;
+    font-size: 5rem;
+    transform: rotate(-20deg);
+    text-shadow: 2px 2px 2px #615b5b;
+    top: -12%;
+    left: 3.5%;
+}
+
+.h1__span{
+    position: absolute;
+    top: 40%;
+    left: -40%;
+    z-index: 100;
+    transform: rotate(5deg);
+    color: #92856e;
+}
+
+.img--logo{
+    position: absolute;
+    height: 500px;
+    top: -100%;
+    left: -8%;
+}
+
+.rotate {
+
+    animation: rotation 60s infinite linear;
+  }
+
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+@media only screen and (max-width: 1500px) {
+    header{
+        margin-bottom: 7rem;
+    }
+}
+
+@media only screen and (min-width: 1500px) {
+    .img--logo{
+        top: -80%;
+        left: -6%;
+    }
 }

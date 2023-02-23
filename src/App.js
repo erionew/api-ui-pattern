@@ -1,6 +1,7 @@
 import './App.css';
 import { useEffect, useState } from 'react';
 import RecipeDetails from './RecipeDetails';
+import doily from './resources/doily.png'
 const key = '7298ee9bd9214c28b9606bd3e3a9ae9e'
 
 function App() {
@@ -19,6 +20,11 @@ function App() {
   
   return (
     <>
+    <header>
+      <img className="img--logo rotate"src={doily}></img>
+      <h1>Just <span className='h1__span'>Desserts</span></h1>
+    </header>
+    
     <div className='container--img-gallery'>
         {recipes.map(recipe => {
         
