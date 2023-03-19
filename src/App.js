@@ -18,6 +18,7 @@ function App() {
   }, [])
 
   
+  
   return (
     <>
     <header>
@@ -33,6 +34,7 @@ function App() {
               <div className='container--img' onClick={
                 (e) => 
                 {
+                  console.log(recipe.instructions)
                   setCurrentRecipe(recipe)
                   setOpenModal(true)
                 }
@@ -49,7 +51,9 @@ function App() {
         name={currentRecipe.title} 
         servings={currentRecipe.servings} 
         time={currentRecipe.readyInMinutes}
-        instructions={<div dangerouslySetInnerHTML={{ __html: currentRecipe.instructions }} />}
+        // instructions={<div dangerouslySetInnerHTML={{ __html: currentRecipe.instructions }} />}
+        instructions = {currentRecipe.instructions}
+    
         image={currentRecipe.image}
       />}
     </>
