@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/api-ui-pattern/static/css/main.2ea718e5.css",
+    "main.js": "/api-ui-pattern/static/js/main.520b4220.js",
+    "static/media/doily.png": "/api-ui-pattern/static/media/doily.53668f454875bbb33b35.png",
+    "index.html": "/api-ui-pattern/index.html",
+    "main.2ea718e5.css.map": "/api-ui-pattern/static/css/main.2ea718e5.css.map",
+    "main.520b4220.js.map": "/api-ui-pattern/static/js/main.520b4220.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2ea718e5.css",
+    "static/js/main.520b4220.js"
+  ]
+}
